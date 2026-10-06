@@ -21,6 +21,7 @@ TrustLens sits between an AI agent's proposed action and its execution. It check
 | Render API / `/health` | Pending account deployment — publish the verified URL here |
 | Local client | http://localhost:5173 |
 | Local API health | http://localhost:5000/health |
+| Source repository | https://github.com/hkaatipelly-ui/trustlens |
 | Demo credentials | **`demo@trustlens.app` / `Demo@1234`** |
 
 Live URLs are added after deployment and end-to-end verification. The local and explicit mock demos are available now.
@@ -424,7 +425,7 @@ rg -l 'GEMINI' client/dist
 
 Expected: **no matching files**. The scanner's positive result is printed by `check:bundle`.
 
-Fresh incognito browser checks cover both live API (isolated replica set, AI disabled) and explicit mock mode: authentication, four scenarios, Redact & Send, tokenized receipt, review attribution, audit filters, JSON errors, session restoration/expiry, mobile layouts, reduced motion, and no uncaught browser errors. Deployed incognito verification is completed once account access and live URLs are configured.
+Fresh incognito browser checks cover both live API (isolated replica set, AI disabled) and explicit mock mode: authentication, four scenarios, Redact & Send, tokenized receipt, review attribution, audit filters, JSON errors, session restoration/expiry, mobile layouts, reduced motion, admin reset followed by a new scenario, and no uncaught browser errors. A delayed-health test verifies the cold-start notice appears after 2 seconds and disappears after recovery. Deployed incognito verification is completed once account access and live URLs are configured.
 
 Optional live Gemini verification, with a private server key and `DEMO_MODE=false`:
 
