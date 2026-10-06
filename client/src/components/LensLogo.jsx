@@ -1,0 +1,3 @@
+export default function LensLogo({ className = 'h-9 w-9' }) {
+  return <svg viewBox="0 0 48 48" fill="none" className={className} aria-hidden="true"><rect x="1" y="1" width="46" height="46" rx="13" fill="#131A23" stroke="#ffffff15" /><circle cx="24" cy="24" r="14" stroke="#E6EDF3" strokeOpacity=".25" /><path d="M24 10a14 14 0 0 1 14 14M24 38a14 14 0 0 1-14-14" stroke="#E6EDF3" strokeWidth="2" strokeLinecap="round" /><circle cx="24" cy="24" r="8" stroke="#E6EDF3" strokeWidth="1.5" /><circle cx="24" cy="24" r="3" fill="#E6EDF3" /><path d="m32 15 4-4M12 37l4-4" stroke="#E6EDF3" strokeOpacity=".5" strokeLinecap="round" /></svg>;
+}
